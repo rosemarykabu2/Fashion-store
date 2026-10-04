@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+/*NAV BAR OPENED*/
+header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background-color:black;
+}
+nav ul{
+  display:flex;
+  gap:20px;
+}
+@media (max-width:480px){
+  nav ul{
+    display:none;
+  }
+  .right-nav{
+    display:none;
+  }
+  .menu-btn{
+    margin-left:140px;
+  }
+}
+@media(min-width:481px){
+  .menu-btn{
+    display:none;
+  }
+}
+nav ul li{
+  list-style:none;
+}
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  font-size:1.1rem;
+
+}
+.logo img{
+  width:130px;
+}
+.fa-solid{
+  margin-right:10px;
+  color:white;
+}
+.right-nav{
+  margin-right:10px;
+}
+/*Nav Bar Closed*/
+
+/*HERO SECTION OPENED*/
+.hero{
+  background-color:rgb(238,238,238);
+  padding-left:50px;
+}
+.hero img{
+  width:100%;
+}
+.hero{
+  display:flex;
+  background:rgb(211,211,211);
+}
+.hero h2{
+  color:red;
+  width:200px;
+  font-size:1.2rem;
+  margin-top:50px;
+  margin-bottom:15px;
+}
+.hero h1{
+  width:400px;
+  margin-bottom:15px;
+}
+.hero p{
+  width:240px;
+  font-size:1.1rem;
+  padding-bottom:10px;
+  padding-top:5px;
+  color:rgb(30,30,30);
+}
+.hero button{
+  margin-bottom:30px;
+  border:none;
+  border-radius:5px;
+  margin-top:10px;
+  background:red;
+  border:none;
+  color:white;
+  padding:10px 25px;
+}
+@media (max-width:480px){
+  .hero-image{
+    display:none;
+  }
+  .hero h2{
+    font-size:0.9rem;
+  }
+  .hero h1{
+    font-size:1rem;
+    margin-top:10px;
+    letter-spacing:20px;
+    letter-spacing:5px;
+  }
+  .hero button{
+    padding:5px 8px;
+  }
+}
+.text-hero{
+  padding-top:70px;
+  padding-left:30px;
+}
+/*HERO SECTION CLOSED*/
+
+/*COLLECTION SECTION OPENED*/
+@media (max-width:480px){
+  .collection img{
+    width:20%;
+  }
+  .showcase{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+}
+.collection img{
+  width:60%;
+  margin-left:50px;
+  margin-top:50px;
+}
+.showcase{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+.collection{
+  background:white;
+}
+.collection h2{
+  text-align:center;
+  margin-top:30px;
+}
+.middle{
+  text-align:center;
+  margin-top:8px;
+}
+@media (max-width:480px){
+  .collection h2{
+    margin-top:9px;
+    font-size:1rem;
+  }
+}
+.main-card{
+  border:1px solid rgba(0,0,0,0.8);
+  height:300px;
+}
+.cap-card{
+  height:280px;
+  border:1px solid rgba(0,0,0,0.8);
+}
+.shoe-card{
+  height:270px;
+  border:1px solid rgba(0,0,0,0.8);
+}
+.shirt-card{
+  height:300px;
+  border:1px solid rgba(0,0,0,0.8);
+}
+.skirt-card{
+  height:300px;
+  border:1px solid rgba(0,0,0,0.8);
+  vertical-align:middle;
+}
+.text-card{
+  margin-left:15px;
+}
+.price{
+  color:red;
+}
+.text-card button{
+  margin-left:70px;
+  padding:8px 60px;
+  margin-right:10px;
+}
+.text-card i{
+  color:black;
+  font-size:1.1rem;
+}
+
+
+/*COLLECTION SECTION CLOSED*/
